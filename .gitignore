@@ -1,4 +1,9 @@
+# these are my private tests, irrelevant to VCS
 private_tests/
+
+# The dotenv file, top secret!
 config/.env
+
+# Environment-related shit (IDE, virtual env..)
 venv/
 .idea/

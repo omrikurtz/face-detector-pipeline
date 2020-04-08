@@ -15,5 +15,4 @@ class Runner:
             else:
                 return False
         else:
-            raise TypeError(
-                f"Input pipeline is not a pipeline but an object of type {type(self.pipeline)}")
+            raise TypeError(f"Input should be a pipeline object, got {type(self.pipeline)} instead")
