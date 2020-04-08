@@ -1,0 +1,4 @@
+private_tests/
+config/.env
+venv/
+.idea/
