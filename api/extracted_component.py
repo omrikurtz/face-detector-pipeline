@@ -13,6 +13,9 @@ from every endpoint we use.
 @dataclass
 class ExtractedRect:
     vertices: list
+    # Note : these aren't really tuples. These are Vertex objects from the Google SDK.
+    # It is a pain in the ass to actually import Vertex for the type-hinting which dataclasses require
+    # Because of how google uses dynamic imports in their SDK.
     top_left_corner: tuple
     top_right_corner: tuple
     bottom_right_corner: tuple
